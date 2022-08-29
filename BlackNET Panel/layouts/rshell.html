@@ -1,0 +1,30 @@
+<div class="text-center col-auto">
+  <p class="font-weight-bold">Execute Shell Commands</p>
+</div>
+
+<div class="form-group col-auto">
+  <label for="shellprovider">Select Shell Provider</label>
+  <select
+    class="form-control custom-select"
+    name="shellprovider"
+    id="shellprovider"
+  >
+    <option value="powershell.exe">Powershell</option>
+    <option value="cmd.exe">CMD</option>
+  </select>
+</div>
+
+<div class="form-group col-auto">
+  <label for="shellcommand">Command</label>
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Shell Command"
+    id="shellcommand"
+    name="shellcommand"
+  />
+  <small>Example: ping google.com</small>
+</div>
+<div class="text-center col-auto">
+  <button class="btn btn-primary btn-block" name="Form2">Send Command</button>
+</div>

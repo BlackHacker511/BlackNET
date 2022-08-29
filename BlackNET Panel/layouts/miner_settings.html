@@ -1,0 +1,83 @@
+<div class="text-center">
+  <p class="font-weight-bold">XMRig Miner</p>
+</div>
+
+<div class="form-group col-auto">
+  <label for="poolurl">Pool URL</label>
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Pool URL"
+    name="poolurl"
+    id="poolurl"
+  />
+</div>
+
+<div class="form-group col-auto">
+  <label for="poolusername">Pool Username</label>
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Pool Username"
+    name="poolusername"
+    id="poolusername"
+  />
+</div>
+
+<div class="form-group col-auto">
+  <label for="poolpassword">Pool Password</label>
+  <input
+    class="form-control"
+    type="password"
+    placeholder="Pool Password"
+    name="poolpassword"
+    id="poolpassword"
+  />
+</div>
+
+<div class="form-group col-auto">
+  <label for="cpupriority">Select CPU Priority</label>
+  <input
+    type="range"
+    class="custom-range"
+    id="cpupriority"
+    name="cpupriority"
+    min="0"
+    max="5"
+    value="0"
+  />
+  <small for="cpupriority"
+    >CPU Priority: <output class="cpupriority">0</output>
+  </small>
+</div>
+
+<div class="form-group col-auto">
+  <label for="thread">Select number of CPU threads</label>
+  <input
+    type="range"
+    class="custom-range"
+    id="thread"
+    name="thread"
+    min="0"
+    max="100"
+    value="0"
+  />
+  <small for="thread">
+    Numer of threads: <output class="thread">0</output>
+  </small>
+</div>
+
+<div class="form-group col-auto">
+  <label for="mode">Select RandomX Mode</label>
+  <select class="form-control custom-select" name="mode" id="mode">
+    <option value="auto">Auto</option>
+    <option value="fast">Fast</option>
+    <option value="light">Light</option>
+  </select>
+</div>
+
+<div class="text-center col-auto">
+  <button class="btn btn-primary btn-block" name="Form2">
+    Start XMRig Miner
+  </button>
+</div>

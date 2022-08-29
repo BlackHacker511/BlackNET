@@ -1,0 +1,70 @@
+.sticky {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  background-color: #e9ecef;
+  height: 80px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  flex-shrink: none;
+}
+
+@media (min-width: 1200px) {
+  .container-special {
+    max-width: 500px;
+  }
+}
+
+.map-container {
+  height: 153px;
+}
+
+.jvmap-smart {
+  width: 100%;
+  height: 100%;
+}
+
+.map-container:after,
+.clearfix {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+div.custom-control-right {
+  padding-right: 24px;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+div.custom-control-right .custom-control-label::after {
+  right: -1.5rem;
+  left: auto;
+}
+div.custom-control-right .custom-control-label::before {
+  right: -2.35rem;
+  left: auto;
+}
+
+@media only screen and (min-width: 576px) {
+  .map-container {
+    height: 153px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .map-container {
+    height: 153px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .map-container {
+    height: 153px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .map-container {
+    height: 153px;
+  }
+}

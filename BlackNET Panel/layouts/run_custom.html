@@ -1,0 +1,61 @@
+<div class="text-center">
+  <p class="font-weight-bold">Execute Custom Plugin</p>
+</div>
+
+<div class="form-group col-auto">
+  <div class="custom-file">
+    <input class="custom-file-input" type="file" name="PluginFile" />
+    <label class="custom-file-label" for="file">Select DLL</label>
+  </div>
+</div>
+
+<div class="form-group col-auto">
+  <label for="ClassName">Class Name</label>
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Class Name"
+    name="ClassName"
+  />
+</div>
+
+<div class="form-group col-auto">
+  <label for="ClassName">Method Name</label>
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Method Name"
+    name="MethodName"
+  />
+</div>
+<div class="form-group col-auto">
+  <div class="custom-control custom-checkbox">
+    <input
+      type="checkbox"
+      class="custom-control-input"
+      id="hasoutput"
+      name="hasoutput"
+      value=""
+    />
+    <label class="custom-control-label" for="hasoutput"
+      >Plugin has Output</label
+    >
+  </div>
+</div>
+
+<div class="form-group col-auto" id="outputType" hidden>
+  <label for="outputType">Output Type</label>
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Output Type"
+    value="txt"
+    name="outputType"
+  />
+</div>
+
+<div class="text-center col-auto">
+  <button class="btn btn-primary btn-block" name="Form2" id="Form2">
+    Send Command
+  </button>
+</div>

@@ -1,0 +1,36 @@
+<div class="text-center">
+  <p class="font-weight-bold">Execute Code</p>
+</div>
+
+<div class="form-group col-auto">
+  <label for="scriptType">Script Type</label>
+  <select class="form-control custom-select" name="scriptType">
+    <option value="none">Select script type</option>
+    <option value="bat">.bat | batch file</option>
+    <option value="vbs">.vbs | VBScript file</option>
+    <option value="ps1">.ps1 | Powershell File</option>
+  </select>
+</div>
+
+<div class="form-group col-auto">
+  <label for="data">Script Code</label>
+  <textarea
+    class="form-control"
+    name="data"
+    placeholder="Script Data"
+  ></textarea>
+</div>
+
+<div class="form-group col-auto">
+  <label for="file_name">Script Name</label>
+  <input
+    type="text"
+    class="form-control"
+    name="file_name"
+    placeholder="eg. abc.ps1"
+  />
+</div>
+
+<div class="text-center col-auto">
+  <button class="btn btn-primary btn-block" name="Form2">Execute Script</button>
+</div>

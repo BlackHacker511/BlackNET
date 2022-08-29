@@ -1,0 +1,75 @@
+<div class="text-center">
+  <p class="font-weight-bold">DDOS Attack</p>
+</div>
+<div class="form-group col-auto">
+  <label for="attacktype">Select The Attack Type</label>
+  <select class="form-control custom-select" name="attacktype" id="attacktype">
+    <option value="TCP Attack">TCP Attack</option>
+    <option value="UDP Attack">UDP Attack</option>
+    <option value="Slowloris Attack">Slowloris Attack</option>
+    <option value="ARME Attack">ARME Attack</option>
+    <option value="PostHTTP Attack">PostHTTP Attack</option>
+    <option value="HTTPGet Attack">HTTPGet Attack</option>
+    <option value="BandwidthFlood Attack">BandwidthFlood Attack</option>
+  </select>
+</div>
+
+<div class="form-group col-auto">
+  <label for="TargetURL">Enter Host to Attack</label>
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Target URL"
+    name="TargetURL"
+    id="TargetURL"
+  />
+</div>
+
+<div class="form-group col-auto" id="portdiv">
+  <label id="portlabel" for="port">Enter Port to Attack</label>
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Attack Port"
+    name="port"
+    id="portlabel"
+    value="80"
+  />
+  <small id="portdesc">Use with TCP Attack</small>
+</div>
+
+<div class="form-group col-auto">
+  <label for="thread">Select number of threads</label>
+  <input
+    type="range"
+    class="custom-range"
+    id="thread"
+    name="thread"
+    min="0"
+    max="1000"
+    value="0"
+  />
+  <small for="thread">
+    Numer of threads: <output class="thread">0</output>
+  </small>
+</div>
+
+<div class="form-group col-auto" id="timeoutdiv">
+  <label for="timeout">Select number to timeout</label>
+  <input
+    type="range"
+    class="custom-range"
+    id="timeout"
+    name="timeout"
+    min="0"
+    max="1000"
+    value="0"
+  />
+  <small for="timeout">
+    Value of timeout: <output class="timeout">0</output>
+  </small>
+</div>
+
+<div class="text-center col-auto">
+  <button class="btn btn-primary btn-block" name="Form2">Start DDOS</button>
+</div>

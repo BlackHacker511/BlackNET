@@ -1,0 +1,51 @@
+<div class="text-center">
+  <p class="font-weight-bold">Open Messagebox</p>
+</div>
+
+<div class="form-group col-auto">
+  <label for="MessageTitle">Message Title</label>
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Message Title"
+    name="MessageTitle"
+  />
+</div>
+
+<div class="form-group col-auto">
+  <label for="Content">Message Content</label>
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Message Content"
+    name="Content"
+  />
+</div>
+
+<div class="form-group col-auto">
+  <label for="msgicon">MessageBox Icon</label>
+  <select class="form-control custom-select" name="msgicon" id="msgicon">
+    <option selected>None</option>
+    <option>Information</option>
+    <option>Asterisk</option>
+    <option>Critical</option>
+    <option>Warning</option>
+    <option>Question</option>
+  </select>
+</div>
+
+<div class="form-group col-auto">
+  <label for="msgbutton">MessageBox Button</label>
+  <select class="form-control custom-select" name="msgbutton" id="msgbutton">
+    <option selected>OkOnly</option>
+    <option>OkCancel</option>
+    <option>YesNo</option>
+    <option>YesNoCancel</option>
+    <option>AbortRetryIgnore</option>
+    <option>RetryCancel</option>
+  </select>
+</div>
+
+<div class="text-center col-auto">
+  <button class="btn btn-primary btn-block" name="Form2">Send Command</button>
+</div>
